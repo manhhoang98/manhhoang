@@ -1,0 +1,10 @@
+h1 {
+    background: orangered;
+    color : white;
+}
+ strong {
+     color: blue;
+ }
+ tr ,td {
+     color: orangered;
+ }
