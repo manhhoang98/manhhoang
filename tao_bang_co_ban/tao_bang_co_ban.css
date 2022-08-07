@@ -3,8 +3,13 @@ table {
 }
 th,td{
     border: 1px solid black;
-    padding: 10px;
+    padding: 3px 100px;
 }
-th{
+th {
     background: yellow;
+}
+
+
+p{
+    color: blue;
 }
