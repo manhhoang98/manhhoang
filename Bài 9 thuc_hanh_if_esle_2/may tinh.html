@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+ button{
+     width: 100%;
+ }
+ table{
+     border: 1px black solid;
+
+ }
+    </style>
+</head>
+<body>
+    <table>
+    <tr>
+        <td colspan="4"><input type="text" size="11 px" id="display"></td>
+    </tr>
+
+    <tr>
+        <td><button  onclick="so(1)" value="1" > 1 </button></td>
+        <td><button  onclick="so(2)" value="2" > 2 </button></td>
+        <td><button  onclick="so(3)" value="3" > 3 </button></td>
+        <td><button  onclick="so('+')" value="+" > + </button></td>
+    </tr>
+    <tr>
+        <td><button   onclick="so(4)" value="4" > 4 </button></td>
+        <td><button   onclick="so(5)" value="5" > 5 </button></td>
+        <td><button   onclick="so(6)" value="6" > 6 </button></td>
+        <td><button   onclick="so('-')" value="-" > - </button></td>
+    </tr>
+    <tr>
+        <td><button   onclick="so(7)" value="7" > 7 </button></td>
+        <td><button   onclick="so(8)" value="8" > 8 </button></td>
+        <td><button   onclick="so(9)" value="9" > 9 </button></td>
+        <td><button   onclick="so('*')" value="*" > * </button></td>
+    </tr>
+    <tr>
+        <td><button   onclick="reset()" value="C" > C </button></td>
+        <td><button   onclick="so(0)" value="0" > 0 </button></td>
+        <td><button   onclick="ketqua()" value="=" > = </button></td>
+        <td><button   onclick="so('/')" value="/" > / </button></td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+     function so(number){
+       document.getElementById("display").value += number;
+     }
+     function ketqua(){
+         let pt = document.getElementById("display").value;
+         let  ketqua = eval(pt);
+         document.getElementById("display").value = ketqua;
+     }
+     function reset(){
+         display.value = "";
+     }
+
+
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Do you love me</h2>
+<button onclick="ok()">yes</button>
+<button onmouseout="khong()" id="ko">No</button>
+</body>
+</html>
+<script>
+    function ok(){
+        alert("hi ae")
+    }
+    function khong(){
+    let x = Math.round(math.random() * window.innerWidth)
+    let y = Math.round(math.random()* window.innerHeight)
+        document.getElementById("ko").style.left = x + 'px';
+        document.getElementById("ko").style.left = y + 'px';
+    }
+</script>

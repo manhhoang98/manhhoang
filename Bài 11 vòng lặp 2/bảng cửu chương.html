@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table{
+        border-spacing: 0;
+    }
+</style>
+<body>
+<h1>Bảng cửu chương</h1>
+<table id="bang" border="1"></table>
+<script>
+    let bang1 = document.getElementById("bang").innerHTML;
+    let count="";
+    for (let i=1;i<=10;i++){
+        count = count + "<tr>";
+        for(let j=1;j<=10;j++){
+            count = count+"<td>"+j+"*"+i+"="+i*j+"</td>";
+        }count=count+"</tr>"
+    }count=count+bang1
+    document.getElementById("bang").innerHTML = count;
+</script>
+</body>
+</html>

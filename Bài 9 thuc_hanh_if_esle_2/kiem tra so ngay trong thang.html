@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiểm tra ngày tháng</title>
+</head>
+<body>
+<h2>Kiểm ra số ngày trong tháng</h2>
+<table>
+  <tr>
+    <td><input type="number" name="tháng" id="thang" placeholder="Nhập tháng"></td>
+    <td><input type="submit" value="Kiểm tra" onclick="check()"></td>
+  </tr>
+  <tr id="show"></tr>
+</table>
+<script>
+  function check() {
+    let month = document.getElementById("thang").value;
+    switch (parseInt(month)){
+      case 1:
+        document.getElementById("show").innerText = "Tháng 1 có 31 ngày";
+        break;
+      case 2:
+        document.getElementById("show").innerText = "Tháng 2 có 28 hoặc 29 ngày";
+        break;
+      case 3:
+        document.getElementById("show").innerText = "Tháng 3 có 31 ngày";
+        break;
+      case 4:
+        document.getElementById("show").innerText = "Tháng 4 có 30 ngày";
+        break;
+      case 5:
+        document.getElementById("show").innerText = "Tháng 5 có 31 ngày";
+        break;
+      case 6:
+        document.getElementById("show").innerText = "Tháng  có 30 ngày";
+        break;
+      case 7:
+        document.getElementById("show").innerText = "Tháng 7 có 31 ngày";
+        break;
+      case 8:
+        document.getElementById("show").innerText = "Tháng 8 có 31 ngày";
+        break;
+      case 9:
+        document.getElementById("show").innerText = "Tháng 9 có 30 ngày";
+        break;
+      case 10:
+        document.getElementById("show").innerText = "Tháng 10 có 31 ngày";
+        break;
+      case 11:
+        document.getElementById("show").innerText = "Tháng 11 có 30 ngày";
+        break;
+      case 12:
+        document.getElementById("show").innerText = "Tháng 12 có 31 ngày";
+        break;
+    }
+  }
+
+
+</script>
+</body>
+</html>
