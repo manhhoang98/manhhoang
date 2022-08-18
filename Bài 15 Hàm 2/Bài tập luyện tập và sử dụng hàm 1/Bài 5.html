@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let ngoisao =prompt("nhập vào ngôi sao:")
+  let a =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"] //Tên các ngôi sao
+  let b =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"] //Tên các chòm sao
+  function timsao(){
+      for (i in a){
+          if (ngoisao === a[i]){
+              return (b[i])
+          }else{
+              return "không tìm thấy sao"
+          }
+      }
+  }
+  document.write(timsao())
+</script>
